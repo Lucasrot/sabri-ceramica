@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Collapse, Container, Row, Col, FloatingLabel, Form, Button } from 'react-bootstrap';
+import { Form, Button, Row, Col, Collapse, Container, Alert } from 'react-bootstrap';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import { validarFormulario } from './validacion';
 import './formulario.css';
 
@@ -26,7 +27,7 @@ export const Formulario = ({ open }) => {
                 <Container className="d-flex justify-content-center">
                     <Row className="justify-content-center">
                         <Col md={12}>
-                            <h3 className="display-4 text-center mb-1 pt-2">Formulario de inscripción</h3>
+                            <h3 className="display-3 text-center mb-1 pt-2 label">Formulario de inscripción</h3>
                         </Col>
                         <Col md={8}>
                             {formularioEnviado ? (
@@ -37,38 +38,42 @@ export const Formulario = ({ open }) => {
                                 <Form id="coursesform" onSubmit={handleSubmit} noValidate validated={validated}>
                                     <Row>
                                         <Col md={6} className="mb-3 mt-3">
-                                            <FloatingLabel controlId="form-name" label="Nombre">
+                                            <Form.Group controlId="form-name">
+                                                <Form.Label  className="label">Nombre</Form.Label>
                                                 <Form.Control type="text" required />
                                                 <Form.Control.Feedback type="invalid">Por favor, ingresa tu nombre.</Form.Control.Feedback>
-                                            </FloatingLabel>
+                                            </Form.Group>
                                         </Col>
                                         <Col md={6} className="mb-3 mt-3">
-                                            <FloatingLabel controlId="form-lastname" label="Apellido">
+                                            <Form.Group controlId="form-lastname">
+                                                <Form.Label className="label">Apellido</Form.Label>
                                                 <Form.Control type="text" required />
                                                 <Form.Control.Feedback type="invalid">Por favor, ingresa tu apellido.</Form.Control.Feedback>
-                                            </FloatingLabel>
+                                            </Form.Group>
                                         </Col>
                                     </Row>
                                     <Row>
                                         <Col md={12} className="mb-3">
-                                            <FloatingLabel controlId="form-email" label="Email">
+                                            <Form.Group controlId="form-email">
+                                                <Form.Label className="label">Email</Form.Label>
                                                 <Form.Control type="email" placeholder="name@example.com" required />
                                                 <Form.Control.Feedback type="invalid">Por favor, ingresa una dirección de correo electrónico válida.</Form.Control.Feedback>
-                                            </FloatingLabel>
+                                            </Form.Group>
                                         </Col>
                                         <Col md={12} className="mb-3">
-                                            <FloatingLabel controlId="form-phone-number" label="Celular">
+                                            <Form.Group controlId="form-phone-number">
+                                                <Form.Label className="label">Celular</Form.Label>
                                                 <Form.Control type="number" required />
                                                 <Form.Control.Feedback type="invalid">Por favor, ingresa un número de celular válido.</Form.Control.Feedback>
                                                 <Form.Text id="phone-help">
                                                     Con código de área sin el 0 y sin el 15. Ej. 223 5111111
                                                 </Form.Text>
-                                            </FloatingLabel>
+                                            </Form.Group>
                                         </Col>
                                     </Row>
                                     <Row>
                                         <Col>
-                                            <h5>Seleccione el curso:</h5>
+                                            <h5 className="label display-5">Seleccione el curso:</h5>
                                             <Form.Check
                                                 type="radio"
                                                 id="exampleRadios1"
