@@ -15,10 +15,11 @@
 
 .titulo-p {
     width: 70%;
+    padding: 2px;
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.13);
+    background-color: rgba(0, 0, 0, 0.50);
     border-radius: 10px;
     padding-bottom: 6px;
     padding-right: 2px;
