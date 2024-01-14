@@ -11,22 +11,25 @@ Currently, two official plugins are available:
 
 1. Clona el repositorio:
 
-   ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+    ```bash
+    git clone https://github.com/tu-usuario/tu-repositorio.git
 
 Accede al directorio del proyecto:
 
-cd React-sabri-ceramica
+    ```bash
+    cd React-sabri-ceramica
 
 Instala las dependencias:
 
-npm install
+    ```bash
+    npm install
 
 ## Ejecutar la Aplicación
 
 Una vez que las dependencias estén instaladas, puedes ejecutar la aplicación con el siguiente comando:
 
-npm run dev
+    ```bash
+    npm run dev
 
 ## Estructura del Proyecto
 
@@ -39,5 +42,7 @@ npm run dev
 
 ## Licencia
 
-Este proyecto está bajo la Licencia [Lucas Roteño] y [Julieta Raimundo]. Consulta el archivo LICENSE.md para obtener más detalles.
+Este proyecto está bajo la Licencia [Lucas Roteño https://github.com/Lucasrot] y 
+[Julieta Raimundo https://github.com/julirei7 ]. Consulta el archivo LICENSE.md para obtener más detalles.
 
+```
