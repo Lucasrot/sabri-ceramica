@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+:root {
+    --colorsiena: #c4a15a;
+    --colorceleste: #c8f0ee1e;
+    --coloreverde: #aacb93;
+    --colorazul: #274c65;
+    --colorblanco: #ffffff;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--colorceleste), var(--coloreverde));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0; 
+    overflow-x: hidden;
+}
+

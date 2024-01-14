@@ -1,0 +1,52 @@
+.nosotros {
+    background: rgb(196, 161, 90);
+    background: linear-gradient(270deg, rgba(39, 76, 101, 1) 2%, rgba(196, 161, 90, 1) 48%, rgba(171, 204, 148, 1) 57%);
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carrusel1 {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.nosotros-tex {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    padding: 2px;
+    width: 100%;
+}
+
+
+
+/*Nosotros-responsive*/
+@media screen and (max-width: 768px) {
+    .nosotros {
+        background: rgb(196, 161, 90);
+        background: linear-gradient(0deg, rgba(196, 161, 90, 1) 17%, rgba(171, 204, 148, 1) 50%, rgba(39, 76, 101, 1) 61%);
+    }
+
+    .nosotros-carrusel {
+        width: 100%;
+    }
+
+    .nosotros-tex {
+        text-align: center;
+        padding: 4px;
+        width: 100%;
+    }
+
+
+    .display-3 {
+        font-size: calc(2.525rem + 2.3vw);
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    
+}

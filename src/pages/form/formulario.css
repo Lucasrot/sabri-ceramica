@@ -1,0 +1,75 @@
+main{
+    background-image: linear-gradient(to bottom, var(--colorceleste), var(--coloreverde));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border: none;
+    border-radius: 19px;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    -ms-border-radius: 19px;
+    -o-border-radius: 19px;
+}
+
+
+
+
+form button {
+    border: none;
+    border-radius: 19px;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    -ms-border-radius: 19px;
+    -o-border-radius: 19px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #268391;
+    background-color: #abcc94;
+    transition: all 1000ms;
+    -webkit-transition: all 1000ms;
+    -moz-transition: all 1000ms;
+    -ms-transition: all 1000ms;
+    -o-transition: all 1000ms;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    outline: 3px solid var(--colorsiena);
+    height: auto;
+}
+
+form button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+form button::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2c9caf;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+    -webkit-transition: width 1000ms;
+    -moz-transition: width 1000ms;
+    -ms-transition: width 1000ms;
+    -o-transition: width 1000ms;
+    -webkit-transform: skewX(45deg);
+    -moz-transform: skewX(45deg);
+    -ms-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
+}
+
+form button:hover::before {
+    width: 250%;
+}
+
