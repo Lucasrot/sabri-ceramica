@@ -42,7 +42,7 @@ Una vez que las dependencias estén instaladas, puedes ejecutar la aplicación c
 
 ## Licencia
 
-Este proyecto está bajo la Licencia [Lucas Roteño https://github.com/Lucasrot] y 
-[Julieta Raimundo https://github.com/julirei7 ]. Consulta el archivo LICENSE.md para obtener más detalles.
+Este proyecto está bajo la Licencia [Julieta Raimundo https://github.com/julirei7 ] y [Lucas Roteño https://github.com/Lucasrot]
+. Consulta el archivo LICENSE.md para obtener más detalles.
 
-```
+

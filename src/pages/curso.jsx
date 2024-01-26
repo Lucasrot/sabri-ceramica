@@ -2,11 +2,12 @@ import { useState } from 'react';
 import { Card, Button, Collapse } from 'react-bootstrap';
 import { Formulario } from './form/formulario';
 import ReactPlayer from 'react-player';
-import videoSource  from '../asset/video/cursada.mp4';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
+import videoSource from '../asset/video/cursada.mp4';
 import './style/curso.css';
 
 export const Curso = () => {
-
     const [open, setOpen] = useState(false);
 
     return (
@@ -30,6 +31,12 @@ export const Curso = () => {
                             <p className="card-text text-2">
                                 <small className="text-muted">Profesora - Nadia Sabrina</small>
                             </p>
+                            <p className="card-text text-2">
+                                <small>
+                                    <FontAwesomeIcon icon={faMapMarker} className="me-2" />
+                                    Dirección: 12 de Octubre 4323, B7600 Mar del Plata
+                                </small>
+                            </p>
                             <h3 className="card-title text-center display-3">Animate a crear</h3>
                             <p className="card-text">
                                 Podrás aprender diferentes técnicas de construcción de objetos manuales,
@@ -41,7 +48,7 @@ export const Curso = () => {
                                 <li>2 tazas o tazones, azucarera y bandeja</li>
                                 <li>Mate, azucarera, yerbera y bandeja</li>
                             </ul>
-                            <p>Este curso incluyen materiales y horneado!!</p>
+                            <p>Este curso incluye materiales y horneado!!</p>
 
                             <div className="d-flex justify-content-center">
                                 <Button
@@ -55,6 +62,13 @@ export const Curso = () => {
                             </div>
                             <Formulario open={open} />
 
+
+                            <p className="card-text text-1 mt-3">
+                                <small>
+                                    <FontAwesomeIcon icon={faMapMarker} className="me-2" />
+                                    Dirección: 12 de Octubre 4323, B7600 Mar del Plata
+                                </small>
+                            </p>
                             <p className="card-text text-1 mt-3">
                                 <small className="text-muted">Profesora - Nadia Sabrina</small>
                             </p>
@@ -65,4 +79,3 @@ export const Curso = () => {
         </section>
     );
 };
-
