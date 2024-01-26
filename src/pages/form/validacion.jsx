@@ -23,9 +23,9 @@ export const validarTelefono = (telefono) => {
     return telefono.trim() !== '' && !isNaN(telefono);
 };
 
-// Función para validar la selección de curso
-export const validarCurso = (curso) => {
-    return curso !== undefined; // Requiere que se haya seleccionado un curso
+// Función para validar la selección de horario
+export const validarCurso = (horario) => {
+    return horario !== undefined; // Requiere que se haya seleccionado un horario
 };
 
 // Función principal para validar el formulario
@@ -34,13 +34,13 @@ export const validarFormulario = async (event) => {
     const apellido = event.target.elements['form-lastname'].value;
     const email = event.target.elements['form-email'].value;
     const telefono = event.target.elements['form-phone-number'].value;
-    const curso = event.target.elements['exampleRadios'].value;
+    const horario = event.target.elements['formHorario'].value;
 
     const esNombreValido = validarNombre(nombre);
     const esApellidoValido = validarApellido(apellido);
     const esEmailValido = validarEmail(email);
     const esTelefonoValido = validarTelefono(telefono);
-    const esCursoValido = validarCurso(curso);
+    const esCursoValido = validarCurso(horario);
 
     const isValid = esNombreValido && esApellidoValido && esEmailValido && esTelefonoValido && esCursoValido;
 

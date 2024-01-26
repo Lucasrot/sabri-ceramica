@@ -8,7 +8,7 @@ export const Home = () => {
                     Taller de Cerámica en Mar Del Plata <strong>Sabri Ceramica</strong>
                 </h1>
                 <p className="parrafo text-xl-center fs-3">
-                    La cerámica, un antiguo arte que ha perdurado a lo largo de la
+                    La cerámica es un antiguo arte que ha perdurado a lo largo de la
                     historia, es
                     mucho más que la simple manipulación de arcilla. Es una disciplina artística que invita a la
                     creatividad

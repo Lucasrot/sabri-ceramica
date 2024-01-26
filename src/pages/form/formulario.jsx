@@ -17,14 +17,14 @@ const ContactForm = () => {
                 <Col md={6} className="mb-3 mt-3">
                     <Form.Group controlId="form-name">
                         <Form.Label className="label">Nombre</Form.Label>
-                        <Form.Control type="text" name="form-name" required />
+                        <Form.Control type="text" name="nombre" required />
                         <Form.Control.Feedback type="invalid">Por favor, ingresa tu nombre.</Form.Control.Feedback>
                     </Form.Group>
                 </Col>
                 <Col md={6} className="mb-3 mt-3">
                     <Form.Group controlId="form-lastname">
                         <Form.Label className="label">Apellido</Form.Label>
-                        <Form.Control type="text" name="form-lastname" required />
+                        <Form.Control type="text" name="apellido" required />
                         <Form.Control.Feedback type="invalid">Por favor, ingresa tu apellido.</Form.Control.Feedback>
                     </Form.Group>
                 </Col>
@@ -32,16 +32,16 @@ const ContactForm = () => {
             <Row>
                 <Col md={12} className="mb-3">
                     <Form.Group controlId="form-email">
-                        <Form.Label className="label">Email</Form.Label>
-                        <Form.Control type="email" name="form-email" placeholder="name@example.com" required />
+                        <Form.Label className="label">Correo Electrónico</Form.Label>
+                        <Form.Control type="email" name="correo" placeholder="nombre@ejemplo.com" required />
                         <Form.Control.Feedback type="invalid">Por favor, ingresa una dirección de correo electrónico válida.</Form.Control.Feedback>
                     </Form.Group>
                 </Col>
                 <Col md={12} className="mb-3">
                     <Form.Group controlId="form-phone-number">
-                        <Form.Label className="label">Celular</Form.Label>
-                        <Form.Control type="tel" name="form-phone-number" required />
-                        <Form.Control.Feedback type="invalid">Por favor, ingresa un número de celular válido.</Form.Control.Feedback>
+                        <Form.Label className="label">Número de Teléfono</Form.Label>
+                        <Form.Control type="tel" name="telefono" required />
+                        <Form.Control.Feedback type="invalid">Por favor, ingresa un número de teléfono válido.</Form.Control.Feedback>
                         <Form.Text id="phone-help">
                             Con código de área sin el 0 y sin el 15. Ej. 223 5111111
                         </Form.Text>
@@ -49,32 +49,20 @@ const ContactForm = () => {
                 </Col>
             </Row>
             <Row>
-                <Col>
-                    <h5 className="label display-5">Seleccione el curso:</h5>
-                    <Form.Check
-                        type="radio"
-                        id="exampleRadios1"
-                        label="Curso 1"
-                        name="exampleRadios"
-                        value="option1"
-                        required
-                    />
-                    <Form.Check
-                        type="radio"
-                        id="exampleRadios2"
-                        label="Curso 2"
-                        name="exampleRadios"
-                        value="option2"
-                        required
-                    />
-                    <Form.Check
-                        type="radio"
-                        id="exampleRadios3"
-                        label="Curso 3"
-                        name="exampleRadios"
-                        value="option3"
-                        required
-                    />
+                <Col md={12} className="mb-3">
+                    <Form.Group controlId="formHorario">
+                        <Form.Label>Seleccione el Horario</Form.Label>
+                        <Form.Select name="horario" defaultValue="HORARIO" required>
+                            <option disabled value="HORARIO">Seleccione un horario</option>
+                            <option>lunes 13:00 p.m. A 16:00 p.m.</option>
+                            <option>martes 9:30 a.m. A 16:00 p.m.</option>
+                            <option>miércoles 9:00 a.m. A 16:00 p.m.</option>
+                            <option>jueves 9:00 a.m. A 15:30 p.m.</option>
+                            <option>viernes 9:00 a.m. A 16:00 p.m.</option>
+                            <option>sábado 9:00 a.m. A 16:00 p.m.</option>
+                        </Form.Select>
+                        <Form.Control.Feedback type="invalid">Por favor, seleccione un horario.</Form.Control.Feedback>
+                    </Form.Group>
                 </Col>
             </Row>
             <Button type="submit" className="mt-2 mb-2 boton-enviar">
