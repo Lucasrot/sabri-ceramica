@@ -8,7 +8,7 @@ const ContactForm = () => {
     const [state, handleSubmit] = useForm("xvoezwvn");
 
     if (state.succeeded) {
-        return <p>¡Gracias por inscribirte te mandaremos un mensaje para confirmar tu inscripción!</p>;
+        return <p>¡Hemos recibido tu solicitud. En la brevedad te responderemos para confirmar tu inscripción y darte más información!</p>;
     }
 
     return (
@@ -93,12 +93,12 @@ export const Formulario = ({ open }) => {
                 <Container className="d-flex justify-content-center">
                     <Row className="justify-content-center">
                         <Col md={12}>
-                            <h3 className="display-3 text-center mb-1 pt-2 label">Formulario de inscripción</h3>
+                            <h3 className="display-3 text-center mb-1 pt-2 label">Solicitud de Inscripción</h3>
                         </Col>
                         <Col md={8}>
                             {formularioEnviado ? (
                                 <Alert variant="success">
-                                    ¡Gracias por inscribirte te mandaremos un mensaje para confirmar tu inscripción!
+                                    ¡Hemos recibido tu solicitud. En la brevedad te responderemos para confirmar tu inscripción y darte más información!
                                 </Alert>
                             ) : (
                                 <ContactForm />
